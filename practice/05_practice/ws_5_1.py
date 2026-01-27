@@ -8,3 +8,15 @@ def reverse_string(sentence):
 
 result = reverse_string("Hello, World!")
 print(result)  # !dlroW ,olleH 
+
+
+
+# # 아래 함수를 수정하시오.
+# def reverse_string():
+#     pass
+
+
+# result = reverse_string("Hello, World!")
+# print(result)  # !dlroW ,olleH
+
+
