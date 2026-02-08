@@ -13,10 +13,10 @@ for tc in range(1, T + 1):
     best = 0
 
     for i in arr:
-        if i == 1:
-            count += 1
-            if count > best :
-                best = count
+        if i == 1: # i가 1이면
+            count += 1 # count에 1씩 더하기(현재 연속된 1의 길이를 늘림)
+            if count > best: # 만약 count가 best보다 크면
+                best = count # best 값 갱신
         else :
             count = 0
 
