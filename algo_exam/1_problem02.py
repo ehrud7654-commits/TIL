@@ -1,3 +1,6 @@
+import sys
+sys.stdin = open('input2.txt')
+
 T = int(input())
 
 for tc in range(1, T+1):
@@ -23,36 +26,3 @@ for tc in range(1, T+1):
                     flies_best = s
 
     print(f'#{tc} {flies_best}')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
