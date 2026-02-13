@@ -34,6 +34,12 @@ for tc in range(1, T+1):
     #
     #     print(f'#{tc} {best}')
 
+    flies_sum = 0
+
+    for r in range(N):
+        for c in range(M):
+            
+
 
 
 
