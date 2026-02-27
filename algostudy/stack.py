@@ -80,6 +80,24 @@ print(st.pop())
 print(st.pop())
 print(st.pop())
 
+
+# 문자열 뒤집기
+
+word = "hello"
+stack = []
+
+# 1. push
+for ch in word:
+    stack.append(ch)
+
+# 2. pop
+result = ""
+while stack:
+    result += stack.pop()
+
+print(result)
+
+
 # 여러 종류 괄호 풀이
 
 def is_valid_brackers(s):
