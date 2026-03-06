@@ -1,0 +1,13 @@
+.frontpage,
+.my-intro,
+.skills,
+.projects,
+.contacts {
+    height: 200px;
+}
+
+.frontpage,
+.skills,
+.contacts {
+    background-color: lightgray;
+}
