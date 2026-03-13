@@ -38,6 +38,7 @@ for tc in range(1, T+1):
 
     for r in range(N):
         for c in range(M):
+            pass
             
 
 
