@@ -1,13 +1,27 @@
-# 16진수 문자로 이루어진 1차 배열, 7비트씩 묶어서 10진수로 변환하기
-T = int(input().strip())
+import sys
+sys.stdin = open('input.txt')
 
-for tc in range(1, T + 1):
-    N, hex_str = input().split()   # hex_str는 문자열로
-    N = int(N)
+from collections import deque
 
-    answer = []
-    for ch in hex_str:
-        v = int(ch, 16) # ch 를 16진수로 변환
-        answer.append(format(v, '04b')) # v를 4자리 2진수로 변환해서 append
+T = 10
 
-    print(f"#{tc} {''.join(answer)}")
+for _ in range(T):
+    tc = int(input())
+    maze = [list(map(int, input())) for _ in range(16)]
+
+
+    start_x , start_y = 0, 0
+    for i in range(16):
+        for j in range(16):
+            if maze[i][j] == 3:
+                start_x, start_y = i, j
+
+    visited = [[False] * 16 for _ in range(16)]
+
+    dx = [-1,1,0,0]
+    dy = [0,0,-1,1]
+
+    queue = deque()
+    queue.append((start_x))
+
+
